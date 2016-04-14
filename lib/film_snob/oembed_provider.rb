@@ -61,6 +61,10 @@ class FilmSnob
       lookup :html
     end
 
+    def thumbnail_url
+      oembed['thumbnail_url']
+    end
+
     private
 
     def not_embeddable!

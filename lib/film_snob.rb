@@ -6,7 +6,7 @@ require "film_snob/exceptions"
 class FilmSnob
   extend Forwardable
 
-  MEDIA_METHODS = [:site, :id, :clean_url, :title, :html].freeze
+  MEDIA_METHODS = [:site, :id, :clean_url, :title, :html, :thumbnail_url].freeze
 
   def_delegators :media, *MEDIA_METHODS
 
